@@ -74,6 +74,7 @@
 		<!-- Shiro连接约束配置,即过滤链的定义 -->
 		<property name="filterChainDefinitions">
 			<value>
+				<!-- 多个角色权限 用 逗号隔开 -->
 				/login=anon
 				/admin*=authc
 				/student=roles[teacher]
